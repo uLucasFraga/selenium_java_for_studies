@@ -47,6 +47,9 @@ https://www.mkyong.com/maven/how-to-install-maven-in-windows/
 
 ## Installation
 
+> Clone
+- Clone this repo to your local machine using `https://github.com/uLucasFraga/selenium_java_for_beginners.git`
+
 - Install all dependencies (pom.xml)
 `mvn install`
 
@@ -56,9 +59,6 @@ https://www.mkyong.com/maven/how-to-install-maven-in-windows/
 
 - Use pom.xml to install the project dependencies
 
-### Clone
-
-- Clone this repo to your local machine using `https://github.com/uLucasFraga/selenium_java_for_beginners.git`
 
 ### Run test
 
