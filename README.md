@@ -50,7 +50,7 @@ https://www.mkyong.com/maven/how-to-install-maven-in-windows/
 - Install all dependencies (pom.xml)
 `mvn install`
 
-![Maven install example](http://g.recordit.co/AC3WJT4g4D.gif)
+![Maven install example](http://g.recordit.co/vCNaZgadVu.gif)
 
 > Tips
 
