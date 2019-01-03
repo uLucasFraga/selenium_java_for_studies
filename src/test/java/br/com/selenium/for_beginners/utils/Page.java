@@ -136,9 +136,17 @@ public class Page {
 		new Actions(getDriver()).moveToElement(getElement(locator)).perform();
 		return getElement(locator).isDisplayed();
 	}
+	
+	protected String getTitle() {
+		return getTitle().trim();
+	}
 
 	protected String getTextFromLabel(By locator) {
 		return getElement(locator).getText().trim();
+	}
+	
+	protected String getAttributeFromLabel(By locator, String value) {
+		return getElement(locator).getAttribute(value);
 	}
 
 	protected String getTextOfVisibleElement(WebElement element) {
