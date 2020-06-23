@@ -1,4 +1,4 @@
-# SELENIUM-JAVA-FOR-BEGINNERS
+# SELENIUM-JAVA-FOR-STUDIES
 
 > Repository with examples of automation using selenium + java
 
@@ -48,7 +48,7 @@ https://www.mkyong.com/maven/how-to-install-maven-in-windows/
 ## Installation
 
 > Clone
-- Clone this repo to your local machine using `https://github.com/uLucasFraga/selenium_java_for_beginners.git`
+- Clone this repo to your local machine using `https://github.com/uLucasFraga/selenium_java_for_studies.git`
 
 - Install all dependencies (pom.xml)
 `mvn install`
