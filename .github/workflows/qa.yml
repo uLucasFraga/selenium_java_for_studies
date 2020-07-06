@@ -20,4 +20,4 @@ jobs:
       - name: build project
         run: mvn clean install -DskipTests
       - name: e2e - regression tests
-        run: mvn test
+        run: mvn clean test

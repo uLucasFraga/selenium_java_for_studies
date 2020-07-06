@@ -16,7 +16,7 @@ public class DriverFactory {
               .getDriversPath()
               .concat(Browsers.CHROME_LINUX.getExecutable()));
       ChromeOptions options = new ChromeOptions();
-      options.addArguments("--start-maximized", "--disable-gpu");
+      options.addArguments("--start-maximized", "--disable-gpu", "--no-sandbox");
       return new ChromeDriver(options);
     }
 
