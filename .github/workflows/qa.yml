@@ -19,5 +19,3 @@ jobs:
           java-version: ${{ matrix.java-version }}
       - name: build project
         run: mvn clean install -DskipTests
-      - name: e2e - regression tests
-        run: mvn clean test
