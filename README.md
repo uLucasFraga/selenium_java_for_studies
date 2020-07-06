@@ -90,7 +90,7 @@ $ mvn test -DCucumber.options="--tags '@example'"
 
 > run all tests with IntelliJ (or another IDE)
 
-Right click on class _src.test.java.br.com.studies/runner/CucumberRunnerTest > Run 'CucumberRunnerTest'_
+Right click on class: **_src.test.java.br.com.studies/runner/CucumberRunnerTest > Run 'CucumberRunnerTest'_**
 
 ---
 
