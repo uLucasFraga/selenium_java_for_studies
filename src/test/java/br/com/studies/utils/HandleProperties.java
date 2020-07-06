@@ -1,4 +1,4 @@
-package br.com.selenium.studies.utils;
+package br.com.studies.utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.util.Properties;
 
 public class HandleProperties {
 
-  private static final String PROPERTIES = "./src/resources/config.properties";
+  private static final String PROPERTIES = "./src/test/resources/config.properties";
 
   private static Properties properties;
 

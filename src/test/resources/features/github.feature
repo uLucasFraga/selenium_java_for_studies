@@ -8,4 +8,4 @@ Feature: Access github
 
   Scenario: Validate access on github website
     Given he accesses the page
-    Then he checks the text on the home page: "github"
+    Then he checks the text on the initial page: "Why GitHub?"

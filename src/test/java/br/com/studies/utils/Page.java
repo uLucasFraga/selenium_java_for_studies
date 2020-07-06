@@ -1,6 +1,6 @@
-package br.com.selenium.studies.utils;
+package br.com.studies.utils;
 
-import br.com.selenium.studies.enums.Browsers;
+import br.com.studies.enums.Browsers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -9,6 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Page {
@@ -92,17 +93,28 @@ public class Page {
     return waitElements(locator);
   }
 
+  protected void fillInput(String datatype, By locator) {
+    isVisible(locator);
+    getElement(locator).clear();
+    this.waitForTextInElement(locator, "");
+    getElement(locator).sendKeys(datatype);
+  }
+
   protected void clickOn(By locator) {
     isVisible(locator);
     new Actions(getDriver()).moveToElement(getElement(locator)).perform();
     getElement(locator).click();
   }
 
-  protected void fillInput(String datatype, By locator) {
-    isVisible(locator);
-    getElement(locator).clear();
-    this.waitForTextInElement(locator, "");
-    getElement(locator).sendKeys(datatype);
+  protected void clickElementByTextList(By list, By locator, String text) {
+    isElementAttachedToHtml(list);
+    List<WebElement> textList = new ArrayList<>(getElements(list));
+    for (WebElement element : textList) {
+      if (text.equals(getTextFromLabel(locator))) {
+        element.click();
+        break;
+      }
+    }
   }
 
   protected void click(By locator) {

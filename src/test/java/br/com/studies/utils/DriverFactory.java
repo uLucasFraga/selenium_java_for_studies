@@ -1,7 +1,7 @@
-package br.com.selenium.studies.utils;
+package br.com.studies.utils;
 
-import br.com.selenium.studies.enums.Browsers;
-import br.com.selenium.studies.enums.OperationSystems;
+import br.com.studies.enums.Browsers;
+import br.com.studies.enums.OperationSystems;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -16,7 +16,7 @@ public class DriverFactory {
               .getDriversPath()
               .concat(Browsers.CHROME_LINUX.getExecutable()));
       ChromeOptions options = new ChromeOptions();
-      options.addArguments("--start-fullscreen", "--disable-gpu");
+      options.addArguments("--start-maximized", "--disable-gpu");
       return new ChromeDriver(options);
     }
 
