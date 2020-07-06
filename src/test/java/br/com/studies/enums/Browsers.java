@@ -1,7 +1,7 @@
-package br.com.selenium.studies.enums;
+package br.com.studies.enums;
 
-import br.com.selenium.studies.utils.DriverFactory;
-import br.com.selenium.studies.utils.HandleProperties;
+import br.com.studies.utils.DriverFactory;
+import br.com.studies.utils.HandleProperties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;

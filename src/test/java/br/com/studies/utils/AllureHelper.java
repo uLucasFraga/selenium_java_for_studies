@@ -1,4 +1,4 @@
-package br.com.selenium.studies.utils;
+package br.com.studies.utils;
 
 import cucumber.api.Scenario;
 import io.qameta.allure.Allure;

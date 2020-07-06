@@ -1,4 +1,4 @@
-package runner;
+package br.com.studies.runner;
 
 import br.com.studies.enums.Browsers;
 import cucumber.api.CucumberOptions;

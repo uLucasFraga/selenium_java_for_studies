@@ -1,4 +1,4 @@
-package br.com.selenium.studies.enums;
+package br.com.studies.enums;
 
 import java.io.File;
 

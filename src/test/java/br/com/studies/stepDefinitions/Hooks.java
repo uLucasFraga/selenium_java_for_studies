@@ -1,7 +1,7 @@
-package br.com.selenium.studies.stepDefinitions;
+package br.com.studies.stepDefinitions;
 
-import br.com.selenium.studies.enums.Browsers;
-import br.com.selenium.studies.utils.AllureHelper;
+import br.com.studies.enums.Browsers;
+import br.com.studies.utils.AllureHelper;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 
