@@ -1,3 +1,5 @@
+![QA CI/CD](https://github.com/uLucasFraga/selenium_java_for_studies/workflows/QA%20CI/CD/badge.svg)
+
 # SELENIUM-JAVA-FOR-STUDIES
 
 > Repository with examples of automation using selenium + java
