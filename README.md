@@ -14,6 +14,7 @@
 - [Configuration](#configuration)
 - [Installation](#installation)
 - [Features](#features)
+- [How to run the tests](#how-to-run-the-tests)
 - [Report](#report)
 - [Support](#support)
 
@@ -60,30 +61,36 @@ https://www.mkyong.com/maven/how-to-install-maven-in-windows/
 - Use pom.xml to install the project dependencies
 
 
-### Run test
+## How to run the tests
 
-> run test Maven
+> run all tests with maven
 
 ```shell
 $ mvn clean test
 ```
 
-> run test Cucumber
+> run all tests with cucumber
 
 ```shell
 $ mvn clean -Dtest=CucumberRunnerTest test
 ```
 
-> run test choose browser (ex: Chrome for Mac)
+> run all tests choosing browser and operational system (ex: Chrome for Linux)
 
 ```shell
-$ mvn clean test -Dbrowser=CHROME_MAC
+$ mvn clean test -Dbrowsers=CHROME_LINUX
 ```
 
-> run test Eclipse
+> run all tests with cucumber and a tag (ex: tag @example)
 
-Right click on class CucumberRunnerTest.java> Run as> JUnit Test
+```shell
+$ mvn test -DCucumber.options="--tags '@example'"
+```
 
+
+> run all tests with IntelliJ (or another IDE)
+
+Right click on class _src.test.java.br.com.studies/runner/CucumberRunnerTest > Run 'CucumberRunnerTest'_
 
 ---
 
@@ -94,34 +101,19 @@ Right click on class CucumberRunnerTest.java> Run as> JUnit Test
 #language: en
 
 @example
-Feature: Learning to use selenium with java 
-As a QA
-I want to learn how to use selenium 
-To be able to automate applications 
- 
-Scenario: Validate access on concrete.com.br website
-	Given Im on the page
-	Then I check the home page text as "Nós Movemos O Mundo."
- 
-Scenario: Validate search on concrete.com.br website
-	Given Im on the page
-	When I fill in the text and select "Utilizando async/await com Protractor"
-	Then I check the search for "Utilizando async/await com Protractor" exists
+Feature: Access github
+  As a QA
+  I want to learn how to use selenium
+  To be able to automate applications like the github website
 
-Scenario Outline: Validate texts in concrete.com.br website
-	Given Im on the page
-	When I fill in the text field with "<name>"
-	Then I checked if the text "<expected>" was successfully validated
-
-  Examples: 
-  | name        | expected				|
-  | Concrete	| A Concrete no QCon SP 2011 – parte 1	|
-  | Lucas Fraga	| Utilizando async/await com Protractor	|
+  Scenario: Validate access on github website
+    Given he accesses the page
+    Then he checks the text on the initial page: "Why GitHub?"
 ```
 
 ## Report
 
-> run allure report
+> run all tests and to generate an allure report
 
 ```shell
 $ mvn allure:serve
