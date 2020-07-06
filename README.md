@@ -32,14 +32,14 @@
 ## Configuration
 > environment variables and bash_profile
 
-###Java
+### Java
 - Mac:
 `export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home`
 
 - Windows:
 https://confluence.atlassian.com/doc/setting-the-java_home-variable-in-windows-8895.html
 
-###Maven
+### Maven
 - Mac:
 `export PATH=/opt/apache-maven-3.5.3/bin:$PATH`
 
