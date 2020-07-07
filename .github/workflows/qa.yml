@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        java-version: [1.8]
+        java-version: [8]
         node-version: [8]
 
     steps:
