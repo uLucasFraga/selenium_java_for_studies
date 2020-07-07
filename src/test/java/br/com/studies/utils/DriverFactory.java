@@ -18,6 +18,7 @@ public class DriverFactory {
       ChromeOptions options = new ChromeOptions();
       options.addArguments(
           "window-size=1920,1080",
+          "--headless",
           "--disable-dev-shm-usage",
           "--disable-gpu",
           "--no-sandbox");
