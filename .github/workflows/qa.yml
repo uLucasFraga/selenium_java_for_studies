@@ -8,8 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        java-version: [12.x]
-        node-version: [8]
+        java-version: [8]
 
     steps:
       - uses: actions/checkout@v2
@@ -17,5 +16,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: ${{ matrix.java-version }}
-      - name: build project
+      - name: install-dependencies
         run: mvn clean install -DskipTests
+      - name: e2e-tests-headless
+        run: mvn clean test
