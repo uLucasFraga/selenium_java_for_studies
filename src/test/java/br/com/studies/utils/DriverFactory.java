@@ -17,10 +17,9 @@ public class DriverFactory {
               .concat(Browsers.CHROME_LINUX.getExecutable()));
       ChromeOptions options = new ChromeOptions();
       options.addArguments(
-          "--window-size=1920,1080",
-          "--disable-gpu",
+          "window-size=1920,1080",
           "--headless",
-          "--no-sandbox");
+          "--disable-dev-shm-usage");
     return new ChromeDriver(options);
     }
 

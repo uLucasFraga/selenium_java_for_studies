@@ -16,7 +16,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: ${{ matrix.java-version }}
-      - name: install-dependencies
+      - name: build project
         run: mvn clean install -DskipTests
-      - name: e2e-tests-headless
-        run: mvn clean test
+      - name: e2e tests - regression
+        run: mvn test
