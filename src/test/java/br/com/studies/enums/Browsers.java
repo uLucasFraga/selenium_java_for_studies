@@ -37,11 +37,11 @@ public enum Browsers {
   public static void setWebDriver() {
     if (Boolean.parseBoolean(System.getProperty("url_github"))) {
       try {
-        String urlConcrete =
+        String urlGithub =
             System.getProperty("urlGithub") != null
                 ? System.getProperty("urlGithub")
                 : HandleProperties.getValue("url_github");
-        webDriver = new RemoteWebDriver(new URL(urlConcrete), new ChromeOptions());
+        webDriver = new RemoteWebDriver(new URL(urlGithub), new ChromeOptions());
       } catch (MalformedURLException e) {
         e.printStackTrace();
       }

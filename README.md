@@ -2,7 +2,7 @@
 
 # SELENIUM-JAVA-FOR-STUDIES
 
-> Repository with examples of automation using selenium + java
+> Repository with examples of automation using selenium + cucumber + junit in java
 
 > Selenium is a portable software-testing framework for web applications. Selenium provides a playback tool for authoring tests without the need to learn a test scripting language.
 
